@@ -1,0 +1,30 @@
+.navbar {
+  background: #ffbcd4;
+  padding: 10px 20px;     /* ⬅️ Reducido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff8db4; /* ⬅️ Más delgado */
+}
+
+.logo {
+  font-size: 18px;        /* ⬅️ Reducido */
+  font-weight: bold;
+  color: #8b1e54;
+}
+
+.links a {
+  margin-left: 15px;      /* ⬅️ Menos espacio */
+  font-size: 14px;        /* ⬅️ Más pequeño */
+  text-decoration: none;
+  color: #8b1e54;
+  font-weight: 600;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.content {
+  padding: 20px;          /* ⬅️ Más compacto */
+}

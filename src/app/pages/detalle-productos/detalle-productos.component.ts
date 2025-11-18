@@ -1,32 +1,51 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-detalle-productos',
+  selector: 'app-detalle-producto',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './detalle-productos.component.html',
-  styleUrl: './detalle-productos.component.css'
+  styleUrls: ['./detalle-productos.component.css']
 })
-export class DetalleProductosComponent {
-id!: number;
-producto: any;
+export class ProductoDetalleComponent {
 
-productos = [
-  { id: 1, nombre: 'Pastel de Chocolate', precio: 20, descripcion: 'Delicioso pastel de chocolate con cobertura de ganache.', imagen: 'https://www.verybestbaking.com/sites/g/files/jgfbjl326/files/srh_recipes/6ac66e5882a6c7672cec34554a5a3a2d.jpg' },
-  { id: 2, nombre: 'Cupcake de Vainilla', precio: 5, descripcion: 'Esponjosos cupcakes de vainilla con glaseado de crema.', imagen: 'assets/cupcake_vainilla.https://origin.cronosmedia.glr.pe/large/2020/10/26/lg_5f9721983619341ea427baf5.jpg' },
-  { id: 3, nombre: 'Galletas de Avena', precio: 10, descripcion: 'Crujientes galletas de avena con pasas y nueces.', imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2fdUGykzCtB3I9uRv2kUT7rVFyblpQHflQw&s' },
-  { id: 4, nombre: 'Tarta de Frutas', precio: 15, descripcion: 'Tarta fresca con una variedad de frutas de temporada.', imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbKeu6XEIWZInLWUJCsur69Ogk8zmy2hkjQ&s' }
-];
+  id!: number;
+  producto: any;
 
-constructor (private route: ActivatedRoute, private router: Router) {}
-ngOnInit(): void {
-  this.id=Number(this.route.snapshot.paramMap.get('id'));
-  this.producto = this.productos.find(p => p.id === this.id);
-}
-volver(): void {
-  this.router.navigate(['/']);
-}
+  productos = [
+    {
+      id: 1,
+      nombre: "Cupcake de Fresas",
+      precio: 8.50,
+      imagen: "https://images.unsplash.com/photo-1505253758473-96b7015fcd40",
+      descripcion: "Bizcocho suave con crema de fresa natural."
+    },
+    {
+      id: 2,
+      nombre: "Cheesecake de Frutos Rojos",
+      precio: 14.90,
+      imagen: "https://images.unsplash.com/photo-1505253216365-7483c0c1e1a1",
+      descripcion: "Cheesecake cremoso con frutos rojos frescos."
+    },
+    {
+      id: 3,
+      nombre: "Torta de Chocolate",
+      precio: 18.00,
+      imagen: "https://images.unsplash.com/photo-1599785209707-e8264c67a89e",
+      descripcion: "Torta húmeda de chocolate artesanal."
+    }
+  ];
+
+  constructor(private route: ActivatedRoute, private router: Router) {}
+
+  ngOnInit(): void {
+    this.id = Number(this.route.snapshot.paramMap.get('id'));
+    this.producto = this.productos.find(p => p.id === this.id);
+  }
+
+  volver(): void {
+    this.router.navigate(['/']);
+  }
 }
