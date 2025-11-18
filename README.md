@@ -157,6 +157,3 @@ Desarrollado por **Valery Chumpitaz**, como práctica guiada del módulo de Rout
 ## 💗 Gracias por visitar este proyecto
 
 ¡Disfruta navegando por la Pastelería DulceRuta! 🍰✨
-
-```
-  
