@@ -1,68 +1,59 @@
-# 🚦✨ **Routing en Angular** ✨🚦
+# RoutingAngular
 
-🌐💫 El **Routing en Angular** nos permite navegar entre vistas sin recargar la página.  
-Es la magia que convierte tu app en una **SPA fluida, moderna y encantadora** 🎉💖
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
 
----
+## Development server
 
-## 🧭 **¿Qué hace el Router?**
-El Router es como el **GPS de tu aplicación** 🗺️:
+To start a local development server, run:
 
-- 📍 **Escucha** cambios en la URL  
-- 🔀 **Decide** qué componente mostrar  
-- 📦 **Carga módulos** solo cuando se necesitan (lazy loading)  
-- 🛡️ **Controla acceso** con guards  
-- 🎒 **Pasa información** usando parámetros y query params
+```bash
+ng serve
+```
 
----
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## 🗺️ **¿Por qué es tan útil?**
-Porque cada sección de tu app puede vivir en su propio espacio 🌟  
-y todo fluye sin interrupciones 🚀✨
+## Code scaffolding
 
----
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-## 🧩 **Elementos del Routing**
-| Elemento | Qué hace |
-|----------|----------|
-| RouterModule | Hace posible el routing |
-| Routes | Define la lista de caminos y sus componentes | 
-| RouterLink | Navegación desde plantillas |
-| ActivatedRoute | Ver la ruta activa | 
-| Guards | Protege rutas o controla acceso |
-| Lazy Loading | Carga módulos solo cuando se necesitan |
----
+```bash
+ng generate component component-name
+```
 
-## 🌈 **Ejemplo básico**
-```ts
-const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'perfil/:id', component: PerfilComponent },
-  { path: '**', redirectTo: 'home' }
-];
-````
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
----
+```bash
+ng generate --help
+```
 
-## 💡 **Tips y Trucos**
+## Building
 
-* ⚡ **Lazy Loading:** Reduce el tamaño inicial de la app.
-* 🔐 **Guards:** Protege rutas sensibles con `CanActivate` o `CanLoad`.
-* 🔗 **RouterLinkActive:** Marca automáticamente la ruta activa.
-* 🧵 **Parametros y Query Params:** Envía info fácilmente entre rutas.
-* 🔄 **Redirecciones:** Usa `**` para manejar páginas no encontradas.
+To build the project run:
 
----
+```bash
+ng build
+```
 
-## 💖 **En resumen**
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-El routing es el **corazón navegante** de Angular ❤️
-Con él, tu app es:
+## Running unit tests
 
-* 🔹 **Fluida**
-* 🔹 **Organizada**
-* 🔹 **Súper user-friendly** 🌟
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-✨ **Diviértete creando rutas y haciendo tu app mágica!** ✨
+```bash
+ng test
+```
 
----
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
