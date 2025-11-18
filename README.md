@@ -160,5 +160,3 @@ Desarrollado por **Valery Chumpitaz**, como práctica guiada del módulo de Rout
 
 ```
   
-Solo dímelo y lo preparo.
-```
