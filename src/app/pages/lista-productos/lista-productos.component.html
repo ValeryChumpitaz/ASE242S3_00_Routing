@@ -1,1 +1,9 @@
-<p>lista-productos works!</p>
+<h2 class="titulo" > Productos Pasteleria</h2>
+<div class="grid">
+    <div class="card" *ngFor="let p of Productos">
+        <img class="producto-img" [src]="p.imagen" alt="{{p.nombre}}">
+        <h3 class="name">{{p.nombre}}</h3>
+        <p class="price">{{p.precio}}</p>
+        <a class="btn" [routerLink]="['/Productos', p.id]">Ver Detalles</a>
+    </div>
+</div>
