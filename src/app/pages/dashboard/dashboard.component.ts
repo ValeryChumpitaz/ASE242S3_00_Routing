@@ -14,7 +14,7 @@ interface Producto {
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule]
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
