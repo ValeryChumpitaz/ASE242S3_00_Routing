@@ -1,0 +1,7 @@
+<nav class="navbar">
+  <a routerLink="/">Inicio</a>
+  <a routerLink="/dashboard" *ngIf="auth.isLoggedIn() && !auth.isAdmin()">Dashboard</a>
+  <a routerLink="/admin" *ngIf="auth.isLoggedIn() && auth.isAdmin()">Admin</a>
+  <a routerLink="/login" *ngIf="!auth.isLoggedIn()">Login</a>
+  <button *ngIf="auth.isLoggedIn()" (click)="logout()">Cerrar sesión</button>
+</nav>

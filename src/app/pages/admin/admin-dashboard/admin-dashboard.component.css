@@ -1,0 +1,32 @@
+.admin-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.admin-card {
+  flex: 1 1 200px;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.admin-card h3 {
+  color: #4d2c3d;
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6f91;
+}
