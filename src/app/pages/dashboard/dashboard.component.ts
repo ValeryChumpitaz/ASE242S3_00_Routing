@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthService } from '../../services/auth.service';
 import { RouterLink } from '@angular/router';
+
 
 interface Producto {
   id: number;
@@ -14,10 +14,10 @@ interface Producto {
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
-})
+}) 
 export class DashboardComponent {
   productos: Producto[] = [
     { id: 1, nombre: 'Cupcake de Chocolate', descripcion: 'Delicioso cupcake con frosting de chocolate', precio: 3.5, imagen: 'https://tse4.mm.bing.net/th/id/OIP.VvC9jQQoYHduetOdQeZs_QHaFj?pid=Api&P=0&h=180' },
