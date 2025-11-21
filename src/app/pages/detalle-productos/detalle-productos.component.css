@@ -1,0 +1,45 @@
+.detalle-card {
+  display: flex;
+  gap: 20px;
+  background: #fff6fb;
+  padding: 20px;
+  border-radius: 16px;
+  border: 2px solid #ffcbe3;
+  max-width: 650px;   /* ⬅️ Antes 900, ahora más compacto */
+  margin: 20px auto;
+}
+
+.detalle-img {
+  width: 220px;        /* ⬅️ Tamaño fijo y más pequeño */
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.info h2 {
+  color: #d63384;
+  font-size: 22px;     /* ⬅️ Bajado */
+}
+
+.precio {
+  font-size: 18px;     /* ⬅️ Reducido */
+  color: #c21871;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.desc {
+  color: #444;
+  font-size: 14px;     /* ⬅️ Más pequeño */
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #ffa3c7;
+  padding: 8px 14px;   /* ⬅️ También reducido */
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}

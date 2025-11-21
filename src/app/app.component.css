@@ -1,5 +1,6 @@
 .navbar {
   background: #ffbcd4;
+<<<<<<< HEAD
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -9,16 +10,35 @@
 
 .logo {
   font-size: 22px;
+=======
+  padding: 10px 20px;     /* ⬅️ Reducido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff8db4; /* ⬅️ Más delgado */
+}
+
+.logo {
+  font-size: 18px;        /* ⬅️ Reducido */
+>>>>>>> 4fd8eb5cada3b0eb951a525e0461944abf0f99ae
   font-weight: bold;
   color: #8b1e54;
 }
 
 .links a {
+<<<<<<< HEAD
   margin-left: 20px;
   text-decoration: none;
   color: #8b1e54;
   font-weight: 600;
   transition: 0.3s ease;
+=======
+  margin-left: 15px;      /* ⬅️ Menos espacio */
+  font-size: 14px;        /* ⬅️ Más pequeño */
+  text-decoration: none;
+  color: #8b1e54;
+  font-weight: 600;
+>>>>>>> 4fd8eb5cada3b0eb951a525e0461944abf0f99ae
 }
 
 .links a:hover {
@@ -26,5 +46,9 @@
 }
 
 .content {
+<<<<<<< HEAD
   padding: 30px;
+=======
+  padding: 20px;          /* ⬅️ Más compacto */
+>>>>>>> 4fd8eb5cada3b0eb951a525e0461944abf0f99ae
 }
